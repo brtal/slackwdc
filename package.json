@@ -1,0 +1,17 @@
+{
+  "author": "Brett Taylor",
+  "name": "SlackWDC",
+  "description": "Slack Web Data Connector for Tableau",
+  "version": "0.0.1",
+  "dependencies": {
+    "es6-promise": "^3.3.1",
+    "express": "~4.0.0",
+    "jquery": "^3.1.0",
+    "querystring": "~0.2.0",
+    "request": "~2.34.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

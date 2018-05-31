@@ -1,0 +1,58 @@
+{
+    "tables" : [
+        {
+            "alias": "Channels",
+            "id": "Channels",
+            "columns": [
+                { "id": "id", "alias": "Channel ID", "dataType": "string" },
+                { "id": "name", "alias": "Name", "dataType": "string" },
+                { "id": "is_channel", "alias": "Is Channel?", "dataType": "bool" },
+                { "id": "created", "alias": "Creation Date", "dataType": "datetime" },
+                { "id": "creator", "alias": "Creator", "dataType": "string" },
+                { "id": "is_archived", "alias": "Is Archived?", "dataType": "bool" },
+                { "id": "is_general", "alias": "Is General?", "dataType": "bool" },
+                { "id": "name_normalized", "alias": "Name (Normalized)", "dataType": "string" },
+                { "id": "is_shared", "alias": "Is Shared?", "dataType": "bool" },
+                { "id": "is_org_shared", "alias": "Is Org Shared?", "dataType": "bool" },
+                { "id": "is_member", "alias": "Is Member?", "dataType": "bool" },
+                { "id": "is_private", "alias": "Is Private?", "dataType": "bool" },
+                { "id": "is_mpim", "alias": "Is MPIM?", "dataType": "bool" },
+                { "id": "topic_value", "alias": "Topic", "dataType": "string" },
+                { "id": "topic_creator", "alias": "Topic Creator", "dataType": "string" },
+                { "id": "topic_lastset", "alias": "Topic Last Set", "dataType": "datetime" },
+                { "id": "purpose_value", "alias": "Purpose", "dataType": "string" },
+                { "id": "purpose_creator", "alias": "Purpose Creator", "dataType": "string" },
+                { "id": "purpose_lastset", "alias": "Purpose Last Set", "dataType": "datetime" },
+                { "id": "num_members", "alias": "Number of Members", "dataType": "int", "columeRole": "measure" }
+            ]
+        },
+        {
+            "alias": "Members",
+            "id": "Members",
+            "columns": [
+                { "id": "id", "alias": "Member ID", "dataType": "string" },
+                { "id": "team_id", "alias": "Team ID", "dataType": "string" },
+                { "id": "name", "alias": "Name", "dataType": "string" },
+                { "id": "deleted", "alias": "Deleted?", "dataType": "bool" },
+                { "id": "color", "alias": "Color", "dataType": "string" },
+                { "id": "real_name", "alias": "Real Name", "dataType": "string" },
+                { "id": "tz", "alias": "Timezone", "dataType": "string" },
+                { "id": "tz_label", "alias": "Timezone Label", "dataType": "string" },
+                { "id": "tz_offset", "alias": "Timezone Offset", "dataType": "int", "columnRole": "dimension" },
+                { "id": "real_name_normalized", "alias": "Real Name (Normalized)", "dataType": "string" },
+                { "id": "email", "alias": "Email", "dataType": "string" },
+                { "id": "is_admin", "alias": "Is Admin?", "dataType": "bool" },
+                { "id": "is_owner", "alias": "Is Owner?", "dataType": "bool" },
+                { "id": "is_primary_owner", "alias": "Is Primary Owner?", "dataType": "bool" },
+                { "id": "is_restricted", "alias": "Is Restricted?", "dataType": "bool" },
+                { "id": "is_ultra_restricted", "alias": "Is Ultra Restricted?", "dataType": "bool" },
+                { "id": "is_bot", "alias": "Is Bot?", "dataType": "bool" },
+                { "id": "updated", "alias": "Updated", "dataType": "datetime" },
+                { "id": "is_app_user", "alias": "Is App User?", "dataType": "bool" },
+                { "id": "has_2fa", "alias": "Has 2FA?", "dataType": "bool" }
+            ]
+        }
+    ],
+    "standardConnections" : [
+    ]
+}
