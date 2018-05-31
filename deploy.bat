@@ -1,3 +1,5 @@
-@cp public deploy
-@cp app.js deploy
-@cp package.json deploy
+mkdir deploy\public
+copy public\* deploy\public
+copy config.js deploy
+copy app.js deploy
+copy package.json deploy
