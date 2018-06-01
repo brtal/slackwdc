@@ -45,9 +45,7 @@ app.get('/callback', function(req, res) {
       redirect_uri: redirect_uri
     });
 
-  console.log("Request: " + url);
   request.get(url, function(error, response, body) {
-    console.log("Received access token response: " + body);
     if (!error && response.statusCode === 200) {
       var access_token = JSON.parse(body).access_token;
       res.redirect('/#' +
