@@ -54,5 +54,31 @@
         }
     ],
     "standardConnections" : [
+        {
+            "alias": "Channels",
+            "tables": [
+                { "id": "Channels", "alias": "Channels" },
+                { "id": "Members", "alias": "Creator" },
+                { "id": "Members", "alias": "Topic Setter" },
+                { "id": "Members", "alias": "Purpose Setter" }
+            ],
+            "joins": [
+                {
+                    "left": { "tableAlias": "Channels", "columnId": "creator" },
+                    "right": { "tableAlias": "Creator", "columnId": "id" },
+                    "joinType": "left"
+                },
+                {
+                    "left": { "tableAlias": "Channels", "columnId": "topic_creator" },
+                    "right": { "tableAlias": "Topic Setter", "columnId": "id" },
+                    "joinType": "left"
+                },
+                {
+                    "left": { "tableAlias": "Channels", "columnId": "purpose_creator" },
+                    "right": { "tableAlias": "Purpose Setter", "columnId": "id" },
+                    "joinType": "left"
+                }
+            ]
+        }
     ]
 }
