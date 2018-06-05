@@ -15,7 +15,7 @@
                 var redirectToSignIn = function() {
                     window.location.href = "/auth";
                 };
-                $("#signIn").click(redirectToSignIn);
+                $("#signInButton").click(redirectToSignIn);
             } else {
                 tableau.abortForAuth("Missing Slack access token!");
             }
@@ -223,6 +223,7 @@
     
     function toggleUIState(contentToShow) {
         var allIds = [
+            '#defaultContent',
             '#content',
             '#signIn'
         ];
