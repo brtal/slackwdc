@@ -80,7 +80,7 @@
 
                         // flat purpose
                         c.purpose_value = c.purpose.value;
-                        c.purpose_creator = c.purpose.value;
+                        c.purpose_creator = c.purpose.creator;
                         c.purpose_lastset = c.purpose.last_set;
                         delete c.purpose;
 
